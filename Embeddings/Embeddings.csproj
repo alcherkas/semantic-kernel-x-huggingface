@@ -9,7 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.SemanticKernel" Version="1.35.0" />
-      <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.35.0" />
+      <PackageReference Include="System.Numerics.Tensors" Version="9.0.1" />
     </ItemGroup>
 
 </Project>
