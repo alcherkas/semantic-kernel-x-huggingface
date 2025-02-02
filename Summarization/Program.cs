@@ -2,10 +2,8 @@
 using Microsoft.SemanticKernel.TextGeneration;
 #pragma warning disable SKEXP0010
 
-var model = "llama-3.2-1b-instruct";
-var uri = new Uri("http://127.0.0.1:1234/v1");
 var kernel = Kernel.CreateBuilder()
-    .AddOpenAIChatCompletion(model, uri, "API_KEY")
+    .AddOpenAIChatCompletion("llama-3.2-1b-instruct", new Uri("http://127.0.0.1:1234/v1"), "API_KEY")
     .Build();
 
 var textGeneration = kernel.GetRequiredService<ITextGenerationService>();
